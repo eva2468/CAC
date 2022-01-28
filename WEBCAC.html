@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        fieldset{
+            align-items: center;
+            background-color: aliceblue;
+            
+
+        }
+        body{
+            background-image: url("christ.jpg");
+            background-size: cover;
+            background-blend-mode: lightens;
+        }
+       
+    </style>
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/hom.css">
+    <script type="text/javascript" src="/js/home.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css"
+  rel="stylesheet"
+/>
+      </script>
+
+      <script src = "jquery.plug-in.js" type = "text/javascript"></script>
+      <script src = "custom.js" type = "text/javascript"></script>
+
+	<title>CAC1</title>
+</head>
+<body >
+	 <script type="text/javascript" src="validations.js"></script>
+	 <div class="thankyou" style="color:white;text-align: center;font-size: 300%;"></div>
+<div class="all">
+<div class="row mt-3">
+	<div class="col-4"></div> 
+	<div class="col-3" >
+		<img src="christlogo.jpg">
+	</div>
+	<div class="col-4"></div>
+</div>
+<div class="row mt-5">
+	<h1 style="color:white" class="col-12" align="center"><b><strong>STUDENT'S FEEDBACK</strong></b></h1>
+	<table border="2">    
+</div>
+<div style="width:800px; margin:0 auto;">
+	<div class="row mt-3">
+		<div class=" col-4" align="center">
+		<label class="form-label" style="color:rgb(5, 0, 0)"><b> NAME</b></label>
+		<input type="text" name="name" class="form-control" id="name" oninput="disable()">
+		<span id="messagename"></span>
+	    </div>
+        </div>
+        <div class="row mt-3">
+	    <div class="col-4" align="center">
+		<label class="form-label" style="color:rgb(2, 0, 0)" ><b> ADDRESS </b></label>
+		<input type="text" name="address" class="form-control" id="address" oninput="enable()">
+		<span id="messageadd"></span>
+		</div>
+	</div>
+	<div class="row mt-3">
+		<div class="col-4" align="center">
+		<label class="form-label" style="color:rgb(0, 0, 0)"><b> EMAIL </b></label>
+		<input type="text" name="email" class="form-control" id="email" oninput="enable()">
+        <span id="messageemail"></span>
+
+	</div>
+        <div class="row mt-3">
+		<div class=" col-4" align="center">
+		<label class="form-label" style="color:rgb(3, 0, 0)"><b> USER NAME</b></label>
+		<input type="text" name="user" class="form-control" id="user" pattern="[a-zA-Z]" oninput="enable()">
+		<span id="messageuser"></span>
+	    </div>
+	    <div class="col-4" align="center">
+		</div>
+    </div>
+
+	<div class="col-4" style="text-align: center;">
+		<label class="form-label" style="color:rgb(0, 0, 0);"><b> PASSWORD </b></label>
+		<input type="text" name="password" class="form-control" id="password" oninput="enable()">
+        <span id="messpass"></span>
+	</div>
+	</div>
+</table>
+<div style="width:800px; margin:0 auto;">
+
+<div class="row mt-3" >
+    <div class="col-4"></div>
+        <!-- student, location, campus, atmosphere, dorm rooms and sport -->
+        <fieldset >
+       <form>
+
+                <label style="color:rgb(0, 0, 0);" ><b>what did u like the most in campus?...Select from the options</b></label><br></th>
+                <br><br><input type="checkbox"  value="atmosphere" >
+                    <label style="color:rgb(0,0,0);">FRIENDLY ATMOSPHERE</label><br><br>
+        <input type="checkbox" name="like" value="student" >
+                    <label style="color: black;" >STUDENT</label><br><br>
+        <input type="checkbox" name="like" value="location" >
+                    <label style="color:rgb(0, 0, 0);" >LOCATION</label><br><br>
+            <input type="checkbox"  name="like" value="campus" >
+                    <label style="color:rgb(0,0,0);">CAMPUS</label><br><br>
+        <input type="checkbox" name="like" value="rooms" >
+                    <label style="color:rgb(0,0,0);">DORM ROOMS</label><br><br>
+        <input type="checkbox" name="like" value="sports" >
+                    <label style="color:rgb(0,0,0);">SPORTS</label><br><br>
+      </form></fieldset>
+      </div>
+    <div class="col-4">
+        <br><br><br><br>
+        <fieldset>
+        <form>
+                    <label style="color:rgb(3, 0, 0)"><b>INTEREST IN UNIVERSITY !?</b></label><br><br>
+                    <input type="radio" id="friends" name="interest" value="friends">
+                    <label for="friends"  style="color:rgb(3, 2, 0)">friends</label><br><br>
+                    <input type="radio" id="interest" name="interest" value="telivision">
+                    <label for="telivision" style="color:rgb(0, 0, 0)">telivision</label><br><br>                         
+                    <input type="radio" id="interest" name="interest" value="internet">
+                    <label for="internet" style="color:rgb(2, 1, 0)">internet</label><br><br> 
+                    <input type="radio" id="interest" name="interest" value="others">                
+                    <label for="others" style="color:rgb(0, 0, 0)">others</label><br><br>
+                 
+        </form>
+    </fieldset>
+</div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="row mt-3">
+<div class="col-5"></div>
+<div class="col-2">
+    <input type="submit" style="width:100%;height: 100%; color: rgb(20, 3, 12); background-color: mediumvioletred;" >
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
